@@ -96,17 +96,17 @@ _Downlad LINK_: <https://bytesatwork.ch/downloads/transfer/bytesatwork/m2/2.7/de
 ### 4. How do you build an Image?
 #### 4.1 byteDEVKIT
 * **Yocto 2.7 & Yocto 3.0**
-_Use repo to download all necessary repositories:_
-```repo init -u https://github.com/bytesatwork/bsp-platform-st.git -b warrior repo sync```
+Use repo to download all necessary repositories:
+	repo init -u https://github.com/bytesatwork/bsp-platform-st.git -b warrior repo sync
 
-	_If those commands are completed successfully, the following command will setup a Yocto Project environment for byteDEVKIT:_
-```MACHINE=bytedevkit DISTRO=poky-bytesatwork EULA=1 . setup-environment build```
+If those commands are completed successfully, the following command will setup a Yocto Project environment for byteDEVKIT:
+	MACHINE=bytedevkit DISTRO=poky-bytesatwork EULA=1 . setup-environment build
 
-	_The final command builds the development image:_
-```bitbake devbase-image-bytesatwork```
+The final command builds the development image:
+	bitbake devbase-image-bytesatwork
 
-	_The output is found in:_
-``tmp/deploy/images/bytedevkit``
+The output is found in:
+	tmp/deploy/images/bytedevkit
 
 #### 4.2 bytePANEL
 * **Yocto 2.7 & Yocto 3.0**
